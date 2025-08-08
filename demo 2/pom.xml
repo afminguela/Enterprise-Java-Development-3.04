@@ -98,6 +98,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
 	</build>
 	<repositories>
 		<repository>
@@ -119,5 +120,6 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+
 
 </project>

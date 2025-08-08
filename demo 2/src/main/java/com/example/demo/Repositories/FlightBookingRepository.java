@@ -3,5 +3,9 @@ package com.example.demo.Repositories;
 import com.example.demo.models.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface FlightBookingRepository extends JpaRepository<Flight, Long> {
+import java.util.List;
+
+public interface FlightBookingRepository extends JpaRepository<Flight, Integer> {
+
+    List<Flight> findByAircraftContains(String aircraft);
 }

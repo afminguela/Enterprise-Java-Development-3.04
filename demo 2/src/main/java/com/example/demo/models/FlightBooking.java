@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class FlightBooking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bookingId;
+    private Integer bookingId;
 
     @ManyToOne
     @JoinColumn(name = "costumer_id")
